@@ -1,0 +1,13 @@
+mediapipe
+numpy
+opencv-python
+opt-einsum==3.3.0
+paddlehub
+paddlepaddle
+PyQt6
+qtawesome
+scikit-learn
+python-dotenv
+requests
+serial
+yaml 

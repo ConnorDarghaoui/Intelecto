@@ -1,0 +1,150 @@
+
+/* General Styles */
+QWidget {
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+/* QMainWindow */
+QMainWindow {
+    background-color: #e0e0e0;
+}
+
+/* QTabWidget */
+QTabWidget::pane { /* The tab widget frame */
+    border: 1px solid #c0c0c0;
+    background-color: #ffffff; /* White background for content area */
+}
+
+QTabWidget::tab-bar {
+    left: 5px; /* move to the right by 5px */
+}
+
+QTabBar::tab {
+    background: #d0d0d0; /* Light gray for inactive tabs */
+    border: 1px solid #c0c0c0;
+    border-bottom-color: #c0c0c0; /* same as pane color */
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    min-width: 100px;
+    padding: 8px 15px;
+    margin-right: 2px;
+}
+
+QTabBar::tab:selected {
+    background: #ffffff; /* White for selected tab */
+    border-color: #c0c0c0;
+    border-bottom-color: #ffffff; /* make the bottom border disappear */
+    font-weight: bold;
+}
+
+QTabBar::tab:hover {
+    background: #e8e8e8;
+}
+
+/* QGroupBox */
+QGroupBox {
+    font-weight: bold;
+    margin-top: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    padding-top: 15px;
+    background-color: #ffffff;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left; /* position at the top left */
+    padding: 0 5px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+}
+
+/* QPushButton */
+QPushButton {
+    background-color: #007bff; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    min-height: 30px;
+}
+
+QPushButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+QPushButton:pressed {
+    background-color: #004085; /* Even darker blue on press */
+}
+
+QPushButton:disabled {
+    background-color: #cccccc; /* Gray for disabled buttons */
+    color: #666666;
+}
+
+/* QLineEdit */
+QLineEdit {
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #fdfdfd;
+}
+
+/* QTextEdit (for Log) */
+QTextEdit {
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+/* QLabel */
+QLabel {
+    color: #333;
+}
+
+/* Specific styles for DetectorView elements */
+#video_label { /* Using objectName for specific styling */
+    border: 2px solid #007bff;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#sign_label {
+    color: #28a745; /* Green for detected sign */
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#status_label {
+    color: #6c757d; /* Gray for status messages */
+    font-size: 16px;
+}
+
+#start_button {
+    background-color: #28a745; /* Green */
+}
+#start_button:hover {
+    background-color: #218838;
+}
+#start_button:pressed {
+    background-color: #1e7e34;
+}
+
+#stop_button {
+    background-color: #dc3545; /* Red */
+}
+#stop_button:hover {
+    background-color: #c82333;
+}
+#stop_button:pressed {
+    background-color: #bd2130;
+}
